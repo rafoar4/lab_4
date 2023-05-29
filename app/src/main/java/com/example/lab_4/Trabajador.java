@@ -27,7 +27,7 @@ public class Trabajador extends AppCompatActivity {
     Button descargar,buscar,asignar;
 
     EmployeeRepository employeeRepository = new Retrofit.Builder()
-            .baseUrl("http://localhost:8080/")
+            .baseUrl("http://192.168.9.106:8080/")
             .addConverterFactory(GsonConverterFactory.create())
             .build().create(EmployeeRepository.class);
 
