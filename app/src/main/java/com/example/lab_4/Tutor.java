@@ -24,7 +24,7 @@ public class Tutor extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tutor);
         verinfo = findViewById(R.id.ver_info);
-        descargarhorarios = findViewById(R.id.horarios);
+
         verinfo.setOnClickListener((view)->{
             startActivity(new Intent(Tutor.this, InfoActivity.class));
         });
