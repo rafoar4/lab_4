@@ -1,46 +1,77 @@
 package com.example.lab_4;
 
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
 import java.io.Serializable;
+import java.time.Instant;
 import java.util.Date;
 
 public class Employee implements Serializable {
 
 
-    String employee_id;
-    String first_name;
-    String last_name;
-    String email;
-    String phone_number;
-    Date hire_date;
-    String job_id;
-    Double salary;
-    Double commission_pct;
-    int manager_id;
-    int department_id;
-    Date meeting_date;
+    @SerializedName("id")
+    @Expose
+    private Integer id;
+    @SerializedName("firstName")
+    @Expose
+    private String firstName;
+    @SerializedName("lastName")
+    @Expose
+    private String lastName;
+    @SerializedName("email")
+    @Expose
+    private String email;
+    @SerializedName("phoneNumber")
+    @Expose
+    private String phoneNumber;
+    @SerializedName("hireDate")
+    @Expose
+    private String hireDate;
+    @SerializedName("job")
+    @Expose
+    private Job job;
+    @SerializedName("salary")
+    @Expose
+    private Double salary;
+    @SerializedName("commissionPct")
+    @Expose
+    private Object commissionPct;
+    @SerializedName("managerId")
+    @Expose
+    private Integer managerId;
+    @SerializedName("departmentId")
+    @Expose
+    private Integer departmentId;
+    @SerializedName("meeting")
+    @Expose
+    private Integer meeting;
+    @SerializedName("meetingDate")
+    @Expose
+    private Object meetingDate;
 
-    public String getEmployee_id() {
-        return employee_id;
+    public Integer getId() {
+        return id;
     }
 
-    public void setEmployee_id(String employee_id) {
-        this.employee_id = employee_id;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
-    public String getFirst_name() {
-        return first_name;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setFirst_name(String first_name) {
-        this.first_name = first_name;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public String getLast_name() {
-        return last_name;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setLast_name(String last_name) {
-        this.last_name = last_name;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public String getEmail() {
@@ -51,28 +82,28 @@ public class Employee implements Serializable {
         this.email = email;
     }
 
-    public String getPhone_number() {
-        return phone_number;
+    public String getPhoneNumber() {
+        return phoneNumber;
     }
 
-    public void setPhone_number(String phone_number) {
-        this.phone_number = phone_number;
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 
-    public Date getHire_date() {
-        return hire_date;
+    public String getHireDate() {
+        return hireDate;
     }
 
-    public void setHire_date(Date hire_date) {
-        this.hire_date = hire_date;
+    public void setHireDate(String hireDate) {
+        this.hireDate = hireDate;
     }
 
-    public String getJob_id() {
-        return job_id;
+    public Job getJob() {
+        return job;
     }
 
-    public void setJob_id(String job_id) {
-        this.job_id = job_id;
+    public void setJob(Job job) {
+        this.job = job;
     }
 
     public Double getSalary() {
@@ -83,35 +114,45 @@ public class Employee implements Serializable {
         this.salary = salary;
     }
 
-    public Double getCommission_pct() {
-        return commission_pct;
+    public Object getCommissionPct() {
+        return commissionPct;
     }
 
-    public void setCommission_pct(Double commission_pct) {
-        this.commission_pct = commission_pct;
+    public void setCommissionPct(Object commissionPct) {
+        this.commissionPct = commissionPct;
     }
 
-    public int getManager_id() {
-        return manager_id;
+    public Integer getManagerId() {
+        return managerId;
     }
 
-    public void setManager_id(int manager_id) {
-        this.manager_id = manager_id;
+    public void setManagerId(Integer managerId) {
+        this.managerId = managerId;
     }
 
-    public int getDepartment_id() {
-        return department_id;
+    public Integer getDepartmentId() {
+        return departmentId;
     }
 
-    public void setDepartment_id(int department_id) {
-        this.department_id = department_id;
+    public void setDepartmentId(Integer departmentId) {
+        this.departmentId = departmentId;
     }
 
-    public Date getMeeting_date() {
-        return meeting_date;
+    public Integer getMeeting() {
+        return meeting;
     }
 
-    public void setMeeting_date(Date meeting_date) {
-        this.meeting_date = meeting_date;
+    public void setMeeting(Integer meeting) {
+        this.meeting = meeting;
     }
+
+    public Object getMeetingDate() {
+        return meetingDate;
+    }
+
+    public void setMeetingDate(Object meetingDate) {
+        this.meetingDate = meetingDate;
+    }
+
+
 }

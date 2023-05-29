@@ -52,7 +52,7 @@ public class Trabajador extends AppCompatActivity {
                             Log.e("msg","correcto");
                             Employee[] employees=employeeDto.get_embedded().getEmployees();
                             for (Employee e: employees) {
-                                Log.e("TAG", "onResponse: "+ e.getFirst_name());
+                                Log.e("TAG", "onResponse: "+ e.getFirstName());
 
                             }
                             /*guardarComoObjeto(employees);*/
