@@ -29,7 +29,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ResultadosActivity extends AppCompatActivity {
     EmployeeRepository employeeRepository = new Retrofit.Builder()
-            .baseUrl("http://10.0.2.2:8080/")
+            .baseUrl("http://192.168.9.106:8080/")
             .addConverterFactory(GsonConverterFactory.create())
             .build().create(EmployeeRepository.class);
     String texto=null;
